@@ -1,0 +1,4 @@
+Notes on 04_grid_layout project
+
+grid widgets must be inside a frame
+	* not be inside the main Tk() window 
