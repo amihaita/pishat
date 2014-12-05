@@ -10,23 +10,23 @@ def quitapp():
 #################################################
 mainwindow = Tk()
 
-topframe = Frame(mainwindow, padx=10, pady=10)
-topframe.pack(side=LEFT)
+#topframe = Frame(mainwindow, padx=10, pady=10)
+#topframe.pack(side=LEFT)
 
-label_name = Label(topframe, text='Name: ')
+label_name = Label(mainwindow, text='Name: ')
 label_name.grid(row=0, column=0)
-label_email = Label(topframe, text='Email: ')
+label_email = Label(mainwindow, text='Email: ')
 label_email.grid(row=1, column=0)
 
-entry_name = Entry(topframe)
+entry_name = Entry(mainwindow)
 entry_name.grid(row=0, column=1)
-entry_email = Entry(topframe)
+entry_email = Entry(mainwindow)
 entry_email.grid(row=1, column=1)
 
 #separator1 = Frame(topframe, height=2, bd=1, relief=SUNKEN)
 #separator1.grid(row=3, columnspan=2, padx=5, pady=5)
 
-text_output = Text(topframe)
+text_output = Text(mainwindow)
 text_output.config(height=1, width=30)
 text_output.grid(row=4, column=0, columnspan=2)
 
@@ -37,9 +37,9 @@ text_output.grid(row=4, column=0, columnspan=2)
 
 #bottomframe = Frame(mainwindow)
 #bottomframe.pack(side=RIGHT)
-button_submit = Button(topframe, text="Enter")
+button_submit = Button(mainwindow, text="Enter")
 button_submit.grid(row=6, column=0)
-button_quit = Button(topframe, text="Quit", command = quitapp)
+button_quit = Button(mainwindow, text="Quit", command = quitapp)
 button_quit.grid(row=6, column=1, sticky=E)
 
 mainwindow.title("My App")
