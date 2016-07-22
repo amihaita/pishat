@@ -37,11 +37,13 @@ text_output.grid(row=4, column=0, columnspan=2)
 
 #bottomframe = Frame(mainwindow)
 #bottomframe.pack(side=RIGHT)
-button_submit = Button(mainwindow, text="Enter")
+button_submit = Button(mainwindow, text="Enter", bg="#fcfcf0")
+button_submit.config(relief=RIDGE, bd=1)
 button_submit.grid(row=6, column=0)
-button_quit = Button(mainwindow, text="Quit", command = quitapp)
+button_quit = Button(mainwindow, text="Quit", bg="#fcfcf0", command = quitapp)
+button_quit.config(relief=RIDGE, bd=1)
 button_quit.grid(row=6, column=1, sticky=E)
-
+mainwindow.iconbitmap('floppy.ico')
 mainwindow.title("My App")
 mainwindow.mainloop()
 ###END###
